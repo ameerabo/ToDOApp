@@ -20,7 +20,7 @@ app.mount("/static",StaticFiles(directory=BASE_DIR / "static"),name="static")
 
 @app.get("/")
 def test(request: Request):
-    return templates.TemplateResponse("home.html", {"request": request})
+    return templates.TemplateResponse("login.html", {"request": request})
 
 
 
